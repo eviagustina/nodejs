@@ -1,8 +1,8 @@
 //ini untuk tempat coding
 
 'use strict';
-var response = require('./res');
-var connection = require('./conn');
+var response = require('../models/res');
+var connection = require('../conn');
 
 exports.users = function(req, res) {
     connection.query('SELECT * FROM person', function (error, rows, fields){
